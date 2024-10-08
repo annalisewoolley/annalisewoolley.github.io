@@ -1,0 +1,137 @@
+body{
+	margin:0;
+	padding:0;
+  background-color: #000;
+
+}
+
+.outer{
+  text-align: center;
+}
+
+.page{
+	position:relative;
+	margin-top:0px;
+	background-color: #FFF;
+  	max-width:1200px;
+  	width:100%;
+  	height:600px;
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+  	text-align: left;
+  	opacity: .6;
+}
+
+/* Sticky Navbar */
+.topofpage {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.topofpage ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.topofpage ul li {
+    display: inline;
+}
+
+.topofpage ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+        padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topofpage ul li a: hover {
+    background-color: #111;
+}
+
+.logo{
+  max-width: 200px;
+  background-color: white;
+  display:inline-block;
+  position:relative;
+  text-align: left;
+  top:28px;
+    padding-right: 10px;
+        align-items: left;
+
+
+}
+
+.logo_img{
+  width:50%;
+
+}
+
+.search{
+  display:inline-block;
+  background-color: white;
+  max-width: 50px;
+  margin-left: auto;
+ position:relative;
+ padding-left: 100px;
+ top:10px;
+}
+
+.search_img{
+   margin-top:0px;
+  width: 50%;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  margin-right: 20px;
+
+}
+
+a:hover{
+  color: darkred;
+}
+
+.tile{
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: auto;
+	height: 600px;
+	width: 100%;
+}
+
+.herotop{
+	background-image: url(img/f21.jpg);
+}
+
+.herotop2{
+	background-image: url(img/fendi.jpg);
+}
+
+.herotop3{
+	background-image: url(img/stchair.jpg);
+}
+
+.herotop4{
+	background-image: url(img/pinkheels.jpg);
+}
+
+.herotop5{
+	background-image: url(img/car.jpg);
+}
+
+.herotop6{
+	background-image: url(img/male.jpg);
+}
