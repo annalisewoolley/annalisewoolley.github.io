@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;    search_img
+  background-color: #000;
+    color: #000;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #b5d8e3;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0;
+}
+
+.left-logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 60px;
+}
+
+.logo-small {
+    width: 50px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Link */
+.logo-link {
+    flex: 1;
+}
+
+.logo_img {
+    width: 80px;
+}
+
+.search_img{
+    width: 30px;
+
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+    flex: 2;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 0 20px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+}
+
+.main-nav li a:hover {
+    color: #757575;
+}
+
+/* Navigation Icons */
+.nav-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-link {
+    margin-left: 20px;
+}
+
+.icon1 {
+    width: 24px;
+}
+
+.icon2 {
+    width: 26px;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+}
+
+#menu img { 
+    width: 80px;
+}
+
+#menuoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    text-align: left;
+    padding: 50px 0 0 50px;
+    z-index: 1000;
+}
+
+.menuitems {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menuitems:hover {
+    color: #b5d8e3;
+}
+
+#close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1001; 
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    #menu img {
+        width: 40px;
+    }
+
+    .menuitems {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+/* Tile Section */
+.tile {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    margin-bottom: 5px;
+    letter-spacing: 2px
+}
+
+.tilebg1 {
+    background-image: url("img/1.jpeg");
+}
+
+.tilebg2 {
+    background-image: url("img/2.jpeg");
+}
+
+.tilebg3 {
+    background-image: url("img/3.jpeg");
+}
+
+.tilebg4 {
+    background-image: url("img/4.jpeg");
+}
+
+.tilebg5 {
+    background-image: url("img/5.jpeg");
+}
+
+.tilebg6 {
+    background-image: url("img/6.jpeg");
+}
+
+/* Page Content Styling */
+.page {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    opacity: 0.6;
+}
