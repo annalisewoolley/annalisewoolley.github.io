@@ -1,0 +1,159 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-right: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: normal;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 2px;
+}
+
+.search-bar {
+  margin-left: auto;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Products Rows */
+.products-row-center {
+  display: grid;
+  gap: 20px;
+  padding: 20px 0;
+  justify-items: center;
+}
+
+.row-two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.row-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .row-two,
+  .row-three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .row-two,
+  .row-three {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Product Styling */
+.product {
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product h2 {
+  text-align: left;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.product p {
+  text-align: left;
+  font-size: 14px;
+  color: #777;
+}
+
+.price {
+  font-size: 16px;
+  color: #333;
+  font-weight: lighter;
+}
+
+/* Footer */
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
