@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+/* Top Banner */
+.top-banner {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 11px;
+}
+
+.top-banner a {
+  color: #333;
+  font-weight: normal;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-right: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: normal;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 2px;
+}
+
+.search-bar {
+  margin-left: auto;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Product Styling */
+.product {
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product img:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.product h2 {
+  text-align: left;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.product p {
+  text-align: left;
+  font-size: 14px;
+  color: #777;
+}
+
+.price {
+  font-size: 16px;
+  color: #333;
+  font-weight: lighter;
+}
+
+/* Adjustments for the first row of products */
+.row-two .product {
+  max-width: 600px; /* Increase size of Product 1 and Product 2 */
+}
+
+.row-two .product img {
+  width: 100%;
+  height: auto;
+}
+
+.row-two {
+  column-gap: 10px; /* Reduce gap to bring Product 1 and Product 2 closer together */
+}
+
+/* Footer */
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
